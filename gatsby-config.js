@@ -1,11 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
-    author: `Kyle Mathews`,
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    title: `بلاگ آریا`,
+    author: `آریا صادقی `,
+    description: `وبلاگی از دلنوشته ها و هر چیزی ک بلدم و میدونم`,
+    siteUrl: `https://aryasadeghy.me/`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `aryasadeghy`,
     },
   },
   plugins: [
@@ -76,5 +76,16 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
+    //new one Goes Here
+    `gatsby-plugin-styled-components`,
+    {
+      resolve: "gatsby-plugin-web-font-loader",
+      options: {
+        custom: {
+          families: ["IRANSans"],
+          urls: ["/fonts/fonts.css"],
+        },
+      },
+    },
   ],
 }
